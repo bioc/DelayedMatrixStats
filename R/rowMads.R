@@ -14,12 +14,11 @@
   DelayedArray:::.get_ans_type(x, must.be.numeric = TRUE)
 
   # Check and subset 'center' (must be either NULL, or a numeric vector of
-  # length 1 or 'nrow(x)')
+  # length 'nrow(x)')
   if (!is.null(center)) {
     stopifnot(is.numeric(center))
-    if (length(center) != 1L) {
-      stopifnot(length(center) == nrow(x))
-      if (!is.null(rows))
+    stopifnot(length(center) == nrow(x))
+    if (!is.null(rows)) {
         center <- center[rows]
     }
   }

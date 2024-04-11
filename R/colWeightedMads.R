@@ -26,13 +26,12 @@
   }
 
   # Check and subset 'center' (must be either NULL, or a numeric vector of
-  # length 1 or 'ncol(x)')
+  # length 'ncol(x)')
   if (!is.null(center)) {
     stopifnot(is.numeric(center))
-    if (length(center) != 1L) {
-      stopifnot(length(center) == ncol(x))
-      if (!is.null(cols))
-        center <- center[cols]
+    stopifnot(length(center) == ncol(x))
+    if (!is.null(cols)) {
+      center <- center[cols]
     }
   }
 

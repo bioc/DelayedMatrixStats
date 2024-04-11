@@ -2,6 +2,11 @@
 \title{News for Package \pkg{DelayedMatrixStats}}
 \encoding{UTF-8}
 
+\section{Version 1.25}{\itemize{
+  \item Scalar center argument for matrix functions are now defunct following similar change in \pkg{matrixStats} (\url{https://github.com/HenrikBengtsson/matrixStats/issues/254}).
+}}
+
+
 \section{Version 1.23}{\itemize{
   \item \code{colAnyMissings()} and \code{rowAnyMissings()} are deprecated in favour of the long-recommended \code{colAnyNAs()} and \code{rowAnyNAs()}. These deprecated functions will be made defunct in the next release cycle.
 }}
