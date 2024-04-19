@@ -12,7 +12,7 @@
 #' usage and processing time is minimized.
 #'
 #' @name DelayedMatrixStats
-#' @docType package
+#' @docType _PACKAGE
 #' @import methods
 #' @importFrom DelayedArray isPristine
 #' @import MatrixGenerics
