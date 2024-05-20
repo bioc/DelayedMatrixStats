@@ -42,29 +42,3 @@
 setGeneric("subset_by_Nindex", signature = "x",
            function(x, Nindex) standardGeneric("subset_by_Nindex")
 )
-
-#' @name DelayedMatrixStats-defunct
-#' @aliases colAnyMissings DelayedMatrixStats-defunct
-#' @title Defunct functions in package \sQuote{DelayedMatrixStats}
-#' @description These functions are defunct and no longer available.
-#' @details Defunct functions are:
-#'  \itemize{
-#'  \item{colAnyMissings}
-#'  \item{rowAnyMissings}
-#'  }
-#' @export
-setGeneric("colAnyMissings", signature = "x",
-           function(x, rows = NULL, cols = NULL,
-                    ..., useNames = NA) {
-             .Defunct("colAnyNAs")
-           }
-)
-
-#' @rdname DelayedMatrixStats-defunct
-#' @export
-setGeneric("rowAnyMissings", signature = "x",
-           function(x, rows = NULL, cols = NULL,
-                    ..., useNames = NA) {
-             .Defunct("rowAnyNAs")
-           }
-)
