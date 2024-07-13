@@ -343,10 +343,10 @@ rowblock_APPLY <- function(x, FUN, ...) {
     blockApply(x, FUN=.sparse_handler, FUN, ..., as.sparse=NA, grid=rowAutoGrid(x))
 }
 
-#' @importClassesFrom DelayedArray SparseArraySeed
+#' @importClassesFrom SparseArray SparseArray
 #' @importClassesFrom Matrix sparseMatrix
 .sparse_handler <- function(x, FUN, ...) {
-    if (is(x, "SparseArraySeed")) {
+    if (is(x, "SparseArray")) {
         x <- as(x, "sparseMatrix")
     }
     FUN(x, ...)
