@@ -16,6 +16,6 @@ These objects are imported from other packages. Follow the links
 below to see their documentation.
 
 \describe{
-  \item{DelayedArray}{\code{\link[DelayedArray:DelayedMatrix-stats]{colMaxs}}, \code{\link[DelayedArray:DelayedMatrix-stats]{colMins}}, \code{\link[DelayedArray:DelayedMatrix-stats]{colRanges}}, \code{\link[DelayedArray:DelayedMatrix-stats]{rowMaxs}}, \code{\link[DelayedArray:DelayedMatrix-stats]{rowMins}}, \code{\link[DelayedArray:DelayedMatrix-stats]{rowRanges}}}
+  \item{DelayedArray}{\code{\link[DelayedArray:matrixStats-methods]{colMaxs}}, \code{\link[DelayedArray:matrixStats-methods]{colMins}}, \code{\link[DelayedArray:matrixStats-methods]{colRanges}}, \code{\link[DelayedArray:matrixStats-methods]{rowMaxs}}, \code{\link[DelayedArray:matrixStats-methods]{rowMins}}, \code{\link[DelayedArray:matrixStats-methods]{rowRanges}}}
 }}
 
